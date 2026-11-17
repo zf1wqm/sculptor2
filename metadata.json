@@ -1,0 +1,6 @@
+{
+  "name": "SCULPTOR — Experimental Y2K Editorial",
+  "description": "SCULPTOR Official Website Redesign: Experimental 2000s Fashion Editorial & Magazine Direction",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-editorial: 'Bodoni Moda', Georgia, serif;
+    --font-display: 'Syne', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    --font-pixel: 'Silkscreen', monospace;
+    --digital-pink: #FF2A85;
+    --digital-pink-soft: rgba(255, 42, 133, 0.12);
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #FF2A85;
+    color: #FFFFFF;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-edit {
+  font-family: var(--font-mono);
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
+}
+
+.text-digital-pink {
+  color: var(--digital-pink);
+}
+
+.bg-digital-pink {
+  background-color: var(--digital-pink);
+}
+
+.border-digital-pink {
+  border-color: var(--digital-pink);
+}
+
+/* Custom stepped pixel graphics & vector lines */
+.pixel-corners {
+  clip-path: polygon(
+    0 4px, 4px 4px, 4px 0,
+    calc(100% - 4px) 0, calc(100% - 4px) 4px, 100% 4px,
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%,
+    4px 100%, 4px calc(100% - 4px), 0 calc(100% - 4px)
+  );
+}
